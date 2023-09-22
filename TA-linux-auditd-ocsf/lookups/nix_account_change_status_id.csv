@@ -1,0 +1,5 @@
+status_id,status
+0,Unknown
+1,Success
+2,Failure
+99,Other

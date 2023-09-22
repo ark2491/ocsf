@@ -1,0 +1,12 @@
+type_uid,type_name
+300100,"Account Change: Unknown"
+300101,"Account Change: Create"
+300102,"Account Change: Enable"
+300103,"Account Change: Password Change"
+300104,"Account Change: Password Reset"
+300105,"Account Change: Disable"
+300106,"Account Change: Delete"
+300107,"Account Change: Attach Policy"
+300108,"Account Change: Detach Policy"
+300109,"Account Change: Lock"
+300199,"Account Change: Other"
