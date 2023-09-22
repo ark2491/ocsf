@@ -1,0 +1,6 @@
+confidence_id,confidence,confidence_description
+0,Unknown,"No confidence is assigned."
+1,Low,
+2,Medium
+3,High
+99,Other,"The confidence is not mapped to the defined enum values. See the confidence attribute, which contains a data source specific value."

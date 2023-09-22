@@ -1,0 +1,7 @@
+impact_id,impact,impact_score
+0,Unknown,0
+1,Low,10
+2,Medium,35
+3,High,65
+4,Critical,100
+99,Other,0
