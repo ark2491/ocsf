@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "2.0.0",
+  "info": {
+    "title": "TA Linux Auditd for OCSF compliance",
+    "id": {
+      "group": null,
+      "name": "TA-linux-auditd-ocsf",
+      "version": "1.0.1"
+    },
+    "author": [
+      {
+        "name": "Alexander Kassab",
+        "email": null,
+        "company": null
+      }
+    ],
+    "releaseDate": null,
+    "description": "This is the starting point to work toward OCSF compliance for the Linux Add On",
+    "classification": {
+      "intendedAudience": null,
+      "categories": [],
+      "developmentStatus": null
+    },
+    "commonInformationModels": null,
+    "license": {
+      "name": null,
+      "text": null,
+      "uri": null
+    },
+    "privacyPolicy": {
+      "name": null,
+      "text": null,
+      "uri": null
+    },
+    "releaseNotes": {
+      "name": null,
+      "text": null,
+      "uri": null
+    }
+  },
+  "dependencies": null,
+  "tasks": null,
+  "inputGroups": null,
+  "incompatibleApps": null,
+  "platformRequirements": null,
+  "supportedDeployments": ["*"],
+  "targetWorkloads": null
+}
