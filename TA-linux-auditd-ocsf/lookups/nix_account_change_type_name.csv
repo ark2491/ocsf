@@ -16,3 +16,7 @@ type_uid,type_name,type_uid_description
 300203,"Authentication: Authentication Ticket","A Kerberos authentication ticket (TGT) was requested."
 300204,"Authentication: Service Ticket","A Kerberos service ticket was requested."
 300299,"Authentication: Other",
+300300,"Authorize Session: Unknown",
+300301,"Authorize Session: Assign Privileges","Assign special privileges to a new logon."
+300302,"Authorize Session: Assign Groups","Assign special groups to a new logon."
+300399,"Authorize Session: Other",
