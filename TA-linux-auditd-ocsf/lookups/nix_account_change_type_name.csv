@@ -1,12 +1,18 @@
-type_uid,type_name
-300100,"Account Change: Unknown"
-300101,"Account Change: Create"
-300102,"Account Change: Enable"
-300103,"Account Change: Password Change"
-300104,"Account Change: Password Reset"
-300105,"Account Change: Disable"
-300106,"Account Change: Delete"
-300107,"Account Change: Attach Policy"
-300108,"Account Change: Detach Policy"
-300109,"Account Change: Lock"
-300199,"Account Change: Other"
+type_uid,type_name,type_uid_description
+300100,"Account Change: Unknown",
+300101,"Account Change: Create",
+300102,"Account Change: Enable",
+300103,"Account Change: Password Change",
+300104,"Account Change: Password Reset",
+300105,"Account Change: Disable",
+300106,"Account Change: Delete",
+300107,"Account Change: Attach Policy",
+300108,"Account Change: Detach Policy",
+300109,"Account Change: Lock",
+300199,"Account Change: Other",
+300200,"Authentication: Unknown",
+300201,"Authentication: Logon","A new logon session was requested."
+300202,"Authentication: Logoff","A logon session was terminated and no longer exists."
+300203,"Authentication: Authentication Ticket","A Kerberos authentication ticket (TGT) was requested."
+300204,"Authentication: Service Ticket","A Kerberos service ticket was requested."
+300299,"Authentication: Other",
