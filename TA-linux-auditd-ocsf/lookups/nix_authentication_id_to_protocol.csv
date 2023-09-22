@@ -1,0 +1,13 @@
+auth_protocol_id,auth_protocol
+0,Unknown
+1,NTLM
+2,Kerberos
+3,Digest
+4,OpenID
+5,SAML
+6,OAUTH 2.0
+7,PAP
+8,CHAP
+9,EAP
+10,RADIUS
+99,Other
