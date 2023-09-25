@@ -16,8 +16,8 @@ type_uid,type_name,type_uid_description
 100114,"File System Activity: Open","A request to create a file handle."
 100199,"File System Activity: Other",
 200100,"Security Finding: Unknown",
-200101,"Security Finding: Create","A security finding is created.",
-200102,"Security Finding: Update","A security finding is updated.",
+200101,"Security Finding: Create","A security finding is created."
+200102,"Security Finding: Update","A security finding is updated."
 200199,"Security Finding: Other",
 300100,"Account Change: Unknown",
 300101,"Account Change: Create",
