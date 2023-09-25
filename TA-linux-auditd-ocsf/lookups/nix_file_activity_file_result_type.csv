@@ -1,0 +1,10 @@
+file_result.type_id,file_result.type,file_result.type.description
+0,Unknown,"The type is unknown."
+1,"Regular File",
+2,Folder,
+3,"Character Device",
+4,"Block Device",
+5,"Local Socket",
+6,"Named Pipe",
+7,"Symbolic Link",
+99,Other,"The type is not mapped. See the type attribute, which may contain a data source specific value."
