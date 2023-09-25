@@ -1,4 +1,4 @@
-activity_id,activity_name_activity_description,category_name
+activity_id,activity_name,activity_description,category_name
 0,Unknown,"The event activity is unknown.","System Activity"
 1,Create,"A request to create a new file on a file system.","System Activity"
 2,Read,"A request to read data from a file on a file system.","System Activity"
