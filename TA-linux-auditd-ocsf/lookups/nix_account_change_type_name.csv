@@ -1,4 +1,24 @@
 type_uid,type_name,type_uid_description
+100100,"File System Activity: Unknown",
+100101,"File System Activity: Create","A request to create a new file on a file system."
+100102,"File System Activity: Read","A request to read data from a file on a file system."
+100103,"File System Activity: Update","A request to write data to a file on a file system."
+100104,"File System Activity: Delete","A request to delete a file on a file system."
+100105,"File System Activity: Rename","A request to rename a file on a file system."
+100106,"File System Activity: Set Attributes","A request to set attributes for a file on a file system."
+100107,"File System Activity: Set Security","A request to set security for a file on a file system."
+100108,"File System Activity: Get Attributes","A request to get attributes for a file on a file system."
+100109,"File System Activity: Get Security","A request to get security for a file on a file system."
+100110,"File System Activity: Encrypt","A request to encrypt a file on a file system."
+100111,"File System Activity: Decrypt","A request to decrypt a file on a file system."
+100112,"File System Activity: Mount","A request to mount a file on a file system."
+100113,"File System Activity: Unmount","A request to unmount a file from a file system."
+100114,"File System Activity: Open","A request to create a file handle."
+100199,"File System Activity: Other",
+200100,"Security Finding: Unknown",
+200101,"Security Finding: Create","A security finding is created.",
+200102,"Security Finding: Update","A security finding is updated.",
+200199,"Security Finding: Other",
 300100,"Account Change: Unknown",
 300101,"Account Change: Create",
 300102,"Account Change: Enable",
@@ -20,7 +40,3 @@ type_uid,type_name,type_uid_description
 300301,"Authorize Session: Assign Privileges","Assign special privileges to a new logon.",
 300302,"Authorize Session: Assign Groups","Assign special groups to a new logon.",
 300399,"Authorize Session: Other",
-200100,"Security Finding: Unknown",
-200101,"Security Finding: Create","A security finding is created.",
-200102,"Security Finding: Update","A security finding is updated.",
-200199,"Security Finding: Other",
