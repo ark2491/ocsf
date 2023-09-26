@@ -1,53 +1,53 @@
-activity_description,activity_id,aa_activity_id,activity_name,category_name,category_uid,class_name,class_uid,aa_class_uid
-The event activity is unknown.,0,0,Unknown,System Activity,1,File System Activity,1001,1001
-A request to create a new file on a file system.,1,1,Create,System Activity,1,File System Activity,1001,1001
-A request to read data from a file on a file system.,2,2,Read,System Activity,1,File System Activity,1001,1001
-A request to write data to a file on a file system.,3,3,Update,System Activity,1,File System Activity,1001,1001
-A request to delete a file on a file system.,4,4,Delete,System Activity,1,File System Activity,1001,1001
-A request to rename a file on a file system.,5,5,Rename,System Activity,1,File System Activity,1001,1001
-A request to set attributes for a file on a file system.,6,6,Set Attributes,System Activity,1,File System Activity,1001,1001
-A request to set security for a file on a file system.,7,7,Set Security,System Activity,1,File System Activity,1001,1001
-A request to get attributes for a file on a file system.,8,8,Get Attributes,System Activity,1,File System Activity,1001,1001
-A request to get security for a file on a file system.,9,9,Get Security,System Activity,1,File System Activity,1001,1001
-A request to encrypt a file on a file system.,10,10,Encrypt,System Activity,1,File System Activity,1001,1001
-A request to decrypt a file on a file system.,11,11,Decrypt,System Activity,1,File System Activity,1001,1001
-A request to mount a file on a file system.,12,12,Mount,System Activity,1,File System Activity,1001,1001
-A request to unmount a file from a file system.,13,13,Unmount,System Activity,1,File System Activity,1001,1001
-A request to create a file handle.,14,14,Open,System Activity,1,File System Activity,1001,1001
-The event activity is not mapped.,99,99,Other,System Activity,1,File System Activity,1001,1001
-"The event activity is unknown.",0,0,Unknown,"System Activity",1,"Module Activity",1005,1005
-,1,1,Load,"System Activity",1,"Module Activity",1005,1005
-,2,1,Unload,"System Activity",1,"Module Activity",1005,1005
-"The event activity is not mapped.",9999,,Other,"System Activity",1,"Module Activity",1005,1005
-"The event activity is unknown.",0,0,Unknown,"System Activity",1,"Process Activity",1007,1007
-,1,1,Launch,"System Activity",1,"Process Activity",1007,1007
-,2,2,Terminate,"System Activity",1,"Process Activity",1007,1007
-,3,3,Open,"System Activity",1,"Process Activity",1007,1007
-,4,4,Inject,"System Activity",1,"Process Activity",1007,1007
-,5,5,"Set User ID","System Activity",1,"Process Activity",1007,1007
-"The event activity is not mapped.",99,99,Other,"System Activity",1,"Process Activity",1007,1007
-The event activity is unknown.,0,0,Unknown,Findings,2,Security Finding,2001,2001
-A security finding is created.,1,1,Create,Findings,2,Security Finding,2001,2001
-A security finding is updated.,2,2,Update,Findings,2,Security Finding,2001,2001
-The event activity is not mapped.,99,99,Other,Findings,2,Security Finding,2001,2001
-The event activity is unknown.,0,0,Unknown,Identity & Access Management,3,Account Change,3001,3001
-A user/role was created.,1,1,Create,Identity & Access Management,3,Account Change,3001,3001
-A user/role was enabled.,2,2,Enable,Identity & Access Management,3,Account Change,3001,3001
-An attempt was made to change an account's password.,3,3,Password Change,Identity & Access Management,3,Account Change,3001,3001
-An attempt was made to reset an account's password.,4,4,Password Reset,Identity & Access Management,3,Account Change,3001,3001
-A user/role was disabled.,5,5,Disable,Identity & Access Management,3,Account Change,3001,3001
-A user/role was deleted.,6,6,Delete,Identity & Access Management,3,Account Change,3001,3001
-A user/role was changed.,7,7,Attach Policy,Identity & Access Management,3,Account Change,3001,3001
-A user/role was changed.,8,8,Detach Policy,Identity & Access Management,3,Account Change,3001,3001
-A user account was locked out.,9,9,Lock,Identity & Access Management,3,Account Change,3001,3001
-The event activity is not mapped.,99,99,Other,Identity & Access Management,3,Account Change,3001,3001
-The event activity is unknown.,0,0,Unknown,Identity & Access Management,3,Authentication,3002,3002
-A new logon session was requested.,1,1,Logon,Identity & Access Management,3,Authentication,3002,3002
-A logon session was terminated and no longer exists.,2,2,Logoff,Identity & Access Management,3,Authentication,3002,3002
-A Kerberos authentication ticket (TGT) was requested.,3,3,Authentication Ticket,Identity & Access Management,3,Authentication,3002,3002
-A Kerberos service ticket was requested.,4,4,Service Ticket,Identity & Access Management,3,Authentication,3002,3002
-The event activity is not mapped.,99,99,Other,Identity & Access Management,3,Authentication,3002,3002
-The event activity is unknown.,0,0,Unknown,Identity & Access Management,3,Authorize Session,3003,3003
-Assign special privileges to a new logon.,1,1,Assign Privileges,Identity & Access Management,3,Authorize Session,3003,3003
-Assign special groups to a new logon.,2,2,Assign Groups,Identity & Access Management,3,Authorize Session,3003,3003
-The event activity is not mapped.,99,99,Other,Identity & Access Management,3,Authorize Session,3003,3003
+activity_description,activity_id,activity_name,category_name,category_uid,class_name,class_uid
+The event activity is unknown.,0,Unknown,System Activity,1,File System Activity,1001
+A request to create a new file on a file system.,1,Create,System Activity,1,File System Activity,1001
+A request to read data from a file on a file system.,2,Read,System Activity,1,File System Activity,1001
+A request to write data to a file on a file system.,3,Update,System Activity,1,File System Activity,1001
+A request to delete a file on a file system.,4,Delete,System Activity,1,File System Activity,1001
+A request to rename a file on a file system.,5,Rename,System Activity,1,File System Activity,1001
+A request to set attributes for a file on a file system.,6,Set Attributes,System Activity,1,File System Activity,1001
+A request to set security for a file on a file system.,7,Set Security,System Activity,1,File System Activity,1001
+A request to get attributes for a file on a file system.,8,Get Attributes,System Activity,1,File System Activity,1001
+A request to get security for a file on a file system.,9,Get Security,System Activity,1,File System Activity,1001
+A request to encrypt a file on a file system.,10,Encrypt,System Activity,1,File System Activity,1001
+A request to decrypt a file on a file system.,11,Decrypt,System Activity,1,File System Activity,1001
+A request to mount a file on a file system.,12,Mount,System Activity,1,File System Activity,1001
+A request to unmount a file from a file system.,13,Unmount,System Activity,1,File System Activity,1001
+A request to create a file handle.,14,Open,System Activity,1,File System Activity,1001
+The event activity is not mapped.,99,Other,System Activity,1,File System Activity,1001
+The event activity is unknown.,0,Unknown,System Activity,1,Module Activity,1005
+,1,Load,System Activity,1,Module Activity,1005
+,2,Unload,System Activity,1,Module Activity,1005
+The event activity is not mapped.,9999,Other,System Activity,1,Module Activity,1005
+The event activity is unknown.,0,Unknown,System Activity,1,Process Activity,1007
+,1,Launch,System Activity,1,Process Activity,1007
+,2,Terminate,System Activity,1,Process Activity,1007
+,3,Open,System Activity,1,Process Activity,1007
+,4,Inject,System Activity,1,Process Activity,1007
+,5,Set User ID,System Activity,1,Process Activity,1007
+The event activity is not mapped.,99,Other,System Activity,1,Process Activity,1007
+The event activity is unknown.,0,Unknown,Findings,2,Security Finding,2001
+A security finding is created.,1,Create,Findings,2,Security Finding,2001
+A security finding is updated.,2,Update,Findings,2,Security Finding,2001
+The event activity is not mapped.,99,Other,Findings,2,Security Finding,2001
+The event activity is unknown.,0,Unknown,Identity & Access Management,3,Account Change,3001
+A user/role was created.,1,Create,Identity & Access Management,3,Account Change,3001
+A user/role was enabled.,2,Enable,Identity & Access Management,3,Account Change,3001
+An attempt was made to change an account's password.,3,Password Change,Identity & Access Management,3,Account Change,3001
+An attempt was made to reset an account's password.,4,Password Reset,Identity & Access Management,3,Account Change,3001
+A user/role was disabled.,5,Disable,Identity & Access Management,3,Account Change,3001
+A user/role was deleted.,6,Delete,Identity & Access Management,3,Account Change,3001
+A user/role was changed.,7,Attach Policy,Identity & Access Management,3,Account Change,3001
+A user/role was changed.,8,Detach Policy,Identity & Access Management,3,Account Change,3001
+A user account was locked out.,9,Lock,Identity & Access Management,3,Account Change,3001
+The event activity is not mapped.,99,Other,Identity & Access Management,3,Account Change,3001
+The event activity is unknown.,0,Unknown,Identity & Access Management,3,Authentication,3002
+A new logon session was requested.,1,Logon,Identity & Access Management,3,Authentication,3002
+A logon session was terminated and no longer exists.,2,Logoff,Identity & Access Management,3,Authentication,3002
+A Kerberos authentication ticket (TGT) was requested.,3,Authentication Ticket,Identity & Access Management,3,Authentication,3002
+A Kerberos service ticket was requested.,4,Service Ticket,Identity & Access Management,3,Authentication,3002
+The event activity is not mapped.,99,Other,Identity & Access Management,3,Authentication,3002
+The event activity is unknown.,0,Unknown,Identity & Access Management,3,Authorize Session,3003
+Assign special privileges to a new logon.,1,Assign Privileges,Identity & Access Management,3,Authorize Session,3003
+Assign special groups to a new logon.,2,Assign Groups,Identity & Access Management,3,Authorize Session,3003
+The event activity is not mapped.,99,Other,Identity & Access Management,3,Authorize Session,3003
