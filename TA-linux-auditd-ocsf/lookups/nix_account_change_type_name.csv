@@ -15,6 +15,17 @@ type_uid,type_name,type_uid_description
 100113,"File System Activity: Unmount","A request to unmount a file from a file system."
 100114,"File System Activity: Open","A request to create a file handle."
 100199,"File System Activity: Other",
+100500,"Module Activity: Unknown",
+100501,"Module Activity: Load",
+100502,"Module Activity: Unload",
+100599,"Module Activity: Other",
+100700,"Process Activity: Unknown",
+100701,"Process Activity: Launch",
+100702,"Process Activity: Terminate",
+100703,"Process Activity: Open",
+100704,"Process Activity: Inject",
+100705,"Process Activity: Set User ID",
+100799,"Process Activity: Other",
 200100,"Security Finding: Unknown",
 200101,"Security Finding: Create","A security finding is created."
 200102,"Security Finding: Update","A security finding is updated."
