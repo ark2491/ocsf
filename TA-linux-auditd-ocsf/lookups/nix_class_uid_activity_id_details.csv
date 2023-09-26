@@ -15,6 +15,10 @@ A request to mount a file on a file system.,12,12,Mount,System Activity,1,File S
 A request to unmount a file from a file system.,13,13,Unmount,System Activity,1,File System Activity,1001,1001
 A request to create a file handle.,14,14,Open,System Activity,1,File System Activity,1001,1001
 The event activity is not mapped.,99,99,Other,System Activity,1,File System Activity,1001,1001
+,0,0,Unknown,"The event activity is unknown.","System Activity",1,"Module Activity",1005,1005
+,1,1,Load,,"System Activity",1,"Module Activity",1005,1005
+,2,1,Unload,,"System Activity",1,"Module Activity",1005,1005
+,9999,,Other,"The event activity is not mapped.","System Activity",1,"Module Activity",1005,1005
 The event activity is unknown.,0,0,Unknown,Findings,2,Security Finding,2001,2001
 A security finding is created.,1,1,Create,Findings,2,Security Finding,2001,2001
 A security finding is updated.,2,2,Update,Findings,2,Security Finding,2001,2001
