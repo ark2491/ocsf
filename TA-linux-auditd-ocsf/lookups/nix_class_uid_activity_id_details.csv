@@ -19,6 +19,13 @@ The event activity is not mapped.,99,99,Other,System Activity,1,File System Acti
 ,1,1,Load,"System Activity",1,"Module Activity",1005,1005
 ,2,1,Unload,"System Activity",1,"Module Activity",1005,1005
 "The event activity is not mapped.",9999,,Other,"System Activity",1,"Module Activity",1005,1005
+"The event activity is unknown.",0,0,Unknown,"System Activity",1,"Process Activity",1007,1007
+,1,1,Launch,"System Activity",1,"Process Activity",1007,1007
+,2,2,Terminate,"System Activity",1,"Process Activity",1007,1007
+,3,3,Open,"System Activity",1,"Process Activity",1007,1007
+,4,4,Inject,"System Activity",1,"Process Activity",1007,1007
+,5,5,"Set User ID","System Activity",1,"Process Activity",1007,1007
+"The event activity is not mapped.",99,99,Other,"System Activity",1,"Process Activity",1007,1007
 The event activity is unknown.,0,0,Unknown,Findings,2,Security Finding,2001,2001
 A security finding is created.,1,1,Create,Findings,2,Security Finding,2001,2001
 A security finding is updated.,2,2,Update,Findings,2,Security Finding,2001,2001
