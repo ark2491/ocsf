@@ -10,16 +10,21 @@
     "author": [
       {
         "name": "Alexander Kassab",
-        "email": null,
-        "company": null
+        "email": "null",
+        "company": "XOR Security, An Agile Defense Company"
       }
     ],
     "releaseDate": null,
     "description": "This is the starting point to work toward OCSF compliance for the Linux Add On",
     "classification": {
-      "intendedAudience": null,
-      "categories": [],
-      "developmentStatus": null
+      "intendedAudience": "SOC",
+      "categories": [
+        "OCSF",
+        "Linux",
+        "Security, Fraud & Compliance",
+        "IT Operations"
+      ],
+      "developmentStatus": "Production/Stable"
     },
     "commonInformationModels": null,
     "license": {
@@ -33,9 +38,9 @@
       "uri": null
     },
     "releaseNotes": {
-      "name": null,
-      "text": null,
-      "uri": null
+      "name": "Splunk Add On for Linux OCSF Release Notes",
+      "text": "./README.MD",
+      "uri": "https://github.com/ark2491/ocsf/"
     }
   },
   "dependencies": null,
@@ -44,5 +49,8 @@
   "incompatibleApps": null,
   "platformRequirements": null,
   "supportedDeployments": ["*"],
-  "targetWorkloads": null
+  "targetWorkloads": [
+    "_search_heads",
+    "_indexers"
+  ]
 }
