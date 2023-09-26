@@ -39,7 +39,7 @@
     },
     "releaseNotes": {
       "name": "Splunk Add On for Linux OCSF Release Notes",
-      "text": "./README.MD",
+      "text": "./README/README.MD",
       "uri": "https://github.com/ark2491/ocsf/"
     }
   },
