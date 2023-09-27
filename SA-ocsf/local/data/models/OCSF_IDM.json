@@ -1138,6 +1138,20 @@
                     }
                 },
                 {
+                    "fieldName": "class_uid",
+                    "owner": "IAM",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "class_uid",
+                    "comment": {
+                        "description": "The category unique identifier of the event."
+                    }
+                },
+                {
                     "fieldName": "certificate",
                     "owner": "IAM",
                     "type": "string",
@@ -3059,20 +3073,6 @@
                     }
                 },
                 {
-                    "fieldName": "resource",
-                    "owner": "IAM",
-                    "type": "string",
-                    "fieldSearch": "",
-                    "required": false,
-                    "multivalue": true,
-                    "hidden": false,
-                    "editable": true,
-                    "displayName": "resource",
-                    "comment": {
-                        "description": "Resource that the privileges give access to.."
-                    }
-                },
-                {
                     "fieldName": "service.labels",
                     "owner": "IAM",
                     "type": "string",
@@ -4493,7 +4493,132 @@
                     "comment": ""
                 }
             ],
-            "calculations": [],
+            "calculations": [
+                {
+                    "outputFields": [
+                        {
+                            "fieldName": "activity_name",
+                            "owner": "IAM",
+                            "type": "string",
+                            "fieldSearch": "",
+                            "required": false,
+                            "multivalue": false,
+                            "hidden": false,
+                            "editable": true,
+                            "displayName": "activity_name",
+                            "comment": "",
+                            "lookupOutputFieldName": "activity_name"
+                        },
+                        {
+                            "fieldName": "category_name",
+                            "owner": "IAM",
+                            "type": "string",
+                            "fieldSearch": "",
+                            "required": false,
+                            "multivalue": false,
+                            "hidden": false,
+                            "editable": true,
+                            "displayName": "category_name",
+                            "comment": "",
+                            "lookupOutputFieldName": "category_name"
+                        },
+                        {
+                            "fieldName": "category_uid",
+                            "owner": "IAM",
+                            "type": "number",
+                            "fieldSearch": "",
+                            "required": false,
+                            "multivalue": false,
+                            "hidden": false,
+                            "editable": true,
+                            "displayName": "category_uid",
+                            "comment": "",
+                            "lookupOutputFieldName": "category_uid"
+                        },
+                        {
+                            "fieldName": "class_name",
+                            "owner": "IAM",
+                            "type": "string",
+                            "fieldSearch": "",
+                            "required": false,
+                            "multivalue": false,
+                            "hidden": false,
+                            "editable": true,
+                            "displayName": "class_name",
+                            "comment": "",
+                            "lookupOutputFieldName": "class_name"
+                        },
+                        {
+                            "fieldName": "type_name",
+                            "owner": "IAM",
+                            "type": "string",
+                            "fieldSearch": "",
+                            "required": false,
+                            "multivalue": false,
+                            "hidden": false,
+                            "editable": true,
+                            "displayName": "type_name",
+                            "comment": "",
+                            "lookupOutputFieldName": "type_name"
+                        },
+                        {
+                            "fieldName": "type_uid",
+                            "owner": "IAM",
+                            "type": "number",
+                            "fieldSearch": "",
+                            "required": false,
+                            "multivalue": false,
+                            "hidden": false,
+                            "editable": true,
+                            "displayName": "type_uid",
+                            "comment": "",
+                            "lookupOutputFieldName": "type_uid"
+                        },
+                        {
+                            "fieldName": "type_uid_description",
+                            "owner": "IAM",
+                            "type": "number",
+                            "fieldSearch": "",
+                            "required": false,
+                            "multivalue": false,
+                            "hidden": false,
+                            "editable": true,
+                            "displayName": "type_uid_description",
+                            "comment": "",
+                            "lookupOutputFieldName": "severity_id"
+                        },
+                        {
+                            "fieldName": "severity",
+                            "owner": "IAM",
+                            "type": "string",
+                            "fieldSearch": "",
+                            "required": false,
+                            "multivalue": false,
+                            "hidden": false,
+                            "editable": true,
+                            "displayName": "severity",
+                            "comment": "",
+                            "lookupOutputFieldName": "severity"
+                        }
+                    ],
+                    "calculationType": "Lookup",
+                    "lookupName": "ocsf_class_uid_context",
+                    "comment": "",
+                    "lookupInputs": [
+                        {
+                            "inputField": "activity_id",
+                            "lookupField": "activity_id"
+                        },
+                        {
+                            "inputField": "class_uid",
+                            "lookupField": "class_uid"
+                        }
+                    ],
+                    "owner": "IAM",
+                    "calculationID": "2jv9v94h6oi",
+                    "editable": true
+                }
+            ],
             "constraints": [
                 {
                     "search": "(`ocsf_idm_indexes`) class_uid=30* tag=authentication NOT (status=success actor=*$)",
