@@ -4621,7 +4621,7 @@
             ],
             "constraints": [
                 {
-                    "search": "(`ocsf_iam_indexes`) class_uid=30* tag=authentication NOT (status=success actor=*$)",
+                    "search": "(`ocsf_iam_indexes`) class_uid=30* NOT (status=success actor=*$)",
                     "owner": "IAM"
                 }
             ],
