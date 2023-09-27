@@ -1,0 +1,18 @@
+[datamodels/ICAM]
+version = 9.1.02.20230602
+modtime = 1695844236.623081000
+
+[models/ICAM]
+version = 9.1.02.20230602
+modtime = 1695844236.629027000
+
+[datamodels/OCSF_IDM]
+access = read : [ * ], write : [ admin ]
+export = system
+owner = nobody
+version = 9.1.02.20230602
+modtime = 1695844436.481756000
+
+[models/OCSF_IDM]
+version = 9.1.02.20230602
+modtime = 1695844436.487692000
