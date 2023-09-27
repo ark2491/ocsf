@@ -1138,6 +1138,20 @@
                     }
                 },
                 {
+                    "fieldName": "class_uid",
+                    "owner": "IAM",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "class_uid",
+                    "comment": {
+                        "description": "The category unique identifier of the event."
+                    }
+                },
+                {
                     "fieldName": "certificate",
                     "owner": "IAM",
                     "type": "string",
