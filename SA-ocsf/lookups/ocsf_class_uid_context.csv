@@ -51,3 +51,29 @@ The event activity is unknown.,0,Unknown,Identity & Access Management,3,Authoriz
 Assign special privileges to a new logon.,1,Assign Privileges,Identity & Access Management,3,Authorize Session,3003,Authorize Session: Assign Privileges,300301,Assign special privileges to a new logon.,1,Informational
 Assign special groups to a new logon.,2,Assign Groups,Identity & Access Management,3,Authorize Session,3003,Authorize Session: Assign Groups,300302,Assign special groups to a new logon.,1,Informational
 The event activity is not mapped.,99,Other,Identity & Access Management,3,Authorize Session,3003,Authorize Session: Other,300399,,0,Unknown
+The event activity is unknown,0,Unknown,Network Activity,4,Network Activity,4001,Network Activity: Unknown,400100,,0,Unknown
+A new network connection was opened,1,Open,Network Activity,4,Network Activity,4001,Network Activity: Open,400101,,1,Informational
+The network connection was closed,2,Close,Network Activity,4,Network Activity,4001,Network Activity: Close,400102,,1,Informational
+The network connection was abnormally terminated or closed by a middle device like firewalls,3,Reset,Network Activity,4,Network Activity,4001,Network Activity: Reset,400103,,1,Informational
+The network connection failed. For example a connection timeout or no route to host,4,Fail,Network Activity,4,Network Activity,4001,Network Activity: Fail,400104,,1,Informational
+The network connection was refused. For example an attempt to connect to a server port which is not open,5,Refuse,Network Activity,4,Network Activity,4001,Network Activity: Refuse,400105,,1,Informational
+Network traffic report,6,Traffic,Network Activity,4,Network Activity,4001,Network Activity: Traffic,400106,,1,Informational
+The event activity is not mapped,99,Other,Network Activity,4,Network Activity,4001,Network Activity: Other,4001099,,0,Unknown
+The event activity is unknown,0,Unknown,Network Activity,4,HTTP Activity,4002,HTTP Activity: Unknown,400200,,0,Unknown
+The CONNECT method establishes a tunnel to the server identified by the target resource,1,Connect,Network Activity,4,HTTP Activity,4002,HTTP Activity: Connect,400201,,1,Informational
+The DELETE method deletes the specified resource,2,Delete,Network Activity,4,HTTP Activity,4002,HTTP Activity: Delete,400202,,1,Informational
+The GET method requests a representation of the specified resource. Requests using GET should only retrieve data,3,Get,Network Activity,4,HTTP Activity,4002,HTTP Activity: Get,400203,,1,Informational
+"The HEAD method asks for a response identical to a GET request, but without the response body",4,Head,Network Activity,4,HTTP Activity,4002,HTTP Activity: Head,400204,,1,Informational
+The OPTIONS method describes the communication options for the target resource,5,Options,Network Activity,4,HTTP Activity,4002,HTTP Activity: Options,400205,,1,Informational
+"The POST method submits an entity to the specified resource, often causing a change in state or side effects on the server",6,Post,Network Activity,4,HTTP Activity,4002,HTTP Activity: Post,400206,,1,Informational
+The PUT method replaces all current representations of the target resource with the request payload,7,Put,Network Activity,4,HTTP Activity,4002,HTTP Activity: Put,400207,,1,Informational
+The TRACE method performs a message loop-back test along the path to the target resource,8,Trace,Network Activity,4,HTTP Activity,4002,HTTP Activity: Trace,400208,,1,Informational
+The event activity is not mapped,99,Other,Network Activity,4,HTTP Activity,4002,HTTP Activity: Other,400299,,0,Unknown
+The event activity is unknown,0,Unknown,Network Activity,4,DNS Activity,4003,DNS Activity: Unknown,400300,,0,Unknown
+The DNS query request,1,Query,Network Activity,4,DNS Activity,4003,DNS Activity: Query,400301,,1,Informational
+The DNS query response,2,Response,Network Activity,4,DNS Activity,4003,DNS Activity: Response,400302,,1,Informational
+The network connection was abnormally terminated or closed by a middle device like firewalls,3,Reset,Network Activity,4,DNS Activity,4003,DNS Activity: Reset,400303,,1,Informational
+The network connection failed. For example a connection timeout or no route to host,4,Fail,Network Activity,4,DNS Activity,4003,DNS Activity: Fail,400304,,2,Low
+The network connection was refused. For example an attempt to connect to a server port which is not open,5,Refuse,Network Activity,4,DNS Activity,4003,DNS Activity: Refuse,400305,,2,Low
+Network traffic report,6,Traffic,Network Activity,4,DNS Activity,4003,DNS Activity: Traffic,400306,,1,Informational
+The event activity is not mapped,99,Other,Network Activity,4,DNS Activity,4003,DNS Activity: Other,400399,,1,Informational
