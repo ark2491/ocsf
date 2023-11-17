@@ -5,13 +5,13 @@
     "id": {
       "group": null,
       "name": "SA-ocsf",
-      "version": "1.0.5"
+      "version": "1.0.6"
     },
     "author": [
       {
         "name": "Alexander Kassab",
         "email": null,
-        "company": "XOR Security An Agile Defense Company"
+        "company": "null"
       }
     ],
     "releaseDate": null,

@@ -1,0 +1,2688 @@
+{
+    "modelName": "Network_Activity",
+    "displayName": "Network_Activity",
+    "description": "Network Activity Data Model",
+    "objectSummary": {
+        "Event-Based": 1,
+        "Transaction-Based": 0,
+        "Search-Based": 0
+    },
+    "objects": [
+        {
+            "objectName": "Network_Activity",
+            "displayName": "Network_Activity",
+            "parentName": "BaseEvent",
+            "comment": {
+                "tags": [
+                    "Network_Activity"
+                ]
+            },
+            "fields": [
+                {
+                    "fieldName": "activity_name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": true,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "activity_name",
+                    "comment": {
+                        "description": "The event activity name, as defined by the activity_id."
+                    }
+                },
+                {
+                    "fieldName": "activity_id",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "activity_id",
+                    "comment": {
+                        "description": "The normalized identifier of the activity that triggered the event."
+                    }
+                },
+                {
+                    "fieldName": "app_name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "app_name",
+                    "comment": {
+                        "description": "The name of the application that is associated with the event or object.",
+                        "ta_relevant": false
+                    }
+                },
+                {
+                    "fieldName": "category_name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "category_name",
+                    "comment": {
+                        "description": "The event category name, as defined by category_uid value."
+                    }
+                },
+                {
+                    "fieldName": "category_uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "category_uid",
+                    "comment": {
+                        "description": "The category unique identifier of the event."
+                    }
+                },
+                {
+                    "fieldName": "class_name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "class_name",
+                    "comment": {
+                        "description": "The event class name, as defined by class_uid value."
+                    }
+                },
+                {
+                    "fieldName": "class_uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "class_uid",
+                    "comment": {
+                        "description": "The category unique identifier of the event."
+                    }
+                },
+                {
+                    "fieldName": "connection_info.boundary",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "connection_info.boundary",
+                    "comment": {
+                        "description": "The boundary of the connection, normalized to the caption of 'boundary_id'. In the case of 'Other', it is defined by the event source."
+                    }
+                },
+                {
+                    "fieldName": "connection_info.boundary_id",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "connection_info.boundary_id",
+                    "comment": {
+                        "description": "The normalized identifier of the boundary of the connection"
+                    }
+                },
+                {
+                    "fieldName": "connection_info.uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "connection_info.uid",
+                    "comment": {
+                        "description": "The unique identifier of the connection."
+                    }
+                },
+                {
+                    "fieldName": "connection_info.direction",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "connection_info.direction",
+                    "comment": {
+                        "description": "The direction of the initiated connection, traffic, or email, normalized to the caption of the direction_id value. In the case of 'Other', it is defined by the event source."
+                    }
+                },
+                {
+                    "fieldName": "connection_info.direction_id",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "connection_info.direction_id",
+                    "comment": {
+                        "description": "The normalized identifier of the direction of the initiated connection, traffic, or email."
+                    }
+                },
+                {
+                    "fieldName": "connection_info.protocol_ver",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "connection_info.protocol_ver",
+                    "comment": {
+                        "description": "The Internet Protocol version."
+                    }
+                },
+                {
+                    "fieldName": "connection_info.protocol_ver_id",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "connection_info.protocol_ver_id",
+                    "comment": {
+                        "description": "The confidence score as reported by the event source."
+                    }
+                },
+                {
+                    "fieldName": "connection_info.protocol_name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "connection_info.protocol_name",
+                    "comment": {
+                        "description": "The TCP/IP protocol name in lowercase, as defined by the Internet Assigned Numbers Authority (IANA). See Protocol Numbers."
+                    }
+                },
+                {
+                    "fieldName": "connection_info.protocol_num",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "connection_info.protocol_num",
+                    "comment": {
+                        "description": "The TCP/IP protocol number, as defined by the Internet Assigned Numbers Authority (IANA). Use -1 if the protocol is not defined by IANA. See Protocol Numbers."
+                    }
+                },
+                {
+                    "fieldName": "connection_info.tcp_flags",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "connection_info.tcp_flags",
+                    "comment": {
+                        "description": "The network connection TCP header flags (i.e., control bits)."
+                    }
+                },
+                {
+                    "fieldName": "count",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "count",
+                    "comment": {
+                        "description": "The number of times that events in the same logical group occurred during the event Start Time to End Time period."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.domain",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": true,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.domain",
+                    "comment": {
+                        "description": "The name of the domain."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.location.city",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.location.city",
+                    "comment": {
+                        "description": "The name of the city."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.location.continent",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.location.continent",
+                    "comment": {
+                        "description": "The name of the continent."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.location.coordinates",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.location.coordinates",
+                    "comment": {
+                        "description": "A two-element array, containing a longitude/latitude pair. The format conforms with GeoJSON."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.location.country",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.location.country",
+                    "comment": {
+                        "description": "The ISO 3166-1 Alpha-2 country code. For the complete list of country codes see ISO 3166-1 alpha-2 codes."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.location.desc",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.location.desc",
+                    "comment": {
+                        "description": "The description of the geographical location."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.location.isp",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.location.isp",
+                    "comment": {
+                        "description": "The name of the Internet Service Provider (ISP)."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.location.is_on_premises",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.location.is_on_premises",
+                    "comment": {
+                        "description": "The indication of whether the location is on premises."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.location.postal_code",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.location.postal_code",
+                    "comment": {
+                        "description": "The postal code of the location."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.location.provider",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.location.provider",
+                    "comment": {
+                        "description": "The provider of the geographical location data."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.location.region",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.location.region",
+                    "comment": {
+                        "description": "The alphanumeric code that identifies the principal subdivision (e.g. province or state) of the country. Region codes are defined at ISO 3166-2 and have a limit of three characters. For example, see the region codes for the US."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.hostname",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.hostname",
+                    "comment": {
+                        "description": "The fully qualified name of the endpoint."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.ip",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.ip",
+                    "comment": {
+                        "description": "The IP address of the endpoint, in either IPv4 or IPv6 format."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.instance_uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.instance_uid",
+                    "comment": {
+                        "description": "The unique identifier of a VM instance."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.intermediate_ips",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.intermediate_ips",
+                    "comment": {
+                        "description": "The intermediate IP Addresses. For example, the IP addresses in the HTTP X-Forwarded-For header."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.mac",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.mac",
+                    "comment": {
+                        "description": "The Media Access Control (MAC) address of the endpoint."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.name",
+                    "comment": {
+                        "description": "The short name of the endpoint."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.interface_uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.interface_uid",
+                    "comment": {
+                        "description": "The unique identifier of the network interface."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.interface_name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.interface_name",
+                    "comment": {
+                        "description": "The name of the network interface (e.g. eth2)."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.port",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.port",
+                    "comment": {
+                        "description": "The port used for communication within the network connection."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.svc_name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.svc_name",
+                    "comment": {
+                        "description": "The service name in service-to-service connections. For example, AWS VPC logs the pkt-src-aws-service and pkt-dst-aws-service fields identify the connection is coming from or going to an AWS service."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.subnet_uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.subnet_uid",
+                    "comment": {
+                        "description": "The unique identifier of a virtual subnet."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.uid",
+                    "comment": {
+                        "description": "The unique identifier of the endpoint."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.vlan_uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.vlan_uid",
+                    "comment": {
+                        "description": "The Virtual LAN identifier."
+                    }
+                },
+                {
+                    "fieldName": "dst_endpoint.vpc_uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "dst_endpoint.vpc_uid",
+                    "comment": {
+                        "description": "The unique identifier of the Virtual Private Cloud (VPC)."
+                    }
+                },
+                {
+                    "fieldName": "duration",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "duration",
+                    "comment": {
+                        "description": "The event duration or aggregate time, the amount of time the event covers from start_time to end_time in milliseconds."
+                    }
+                },
+                {
+                    "fieldName": "end_time",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "end_time",
+                    "comment": {
+                        "description": "The end time of a time period, or the time of the most recent event included in the aggregate event."
+                    }
+                },
+                {
+                    "fieldName": "enrichments",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "enrichments",
+                    "comment": {
+                        "description": "The additional information from an external data source, which is associated with the event. For example add location information for the IP address in the DNS answers."
+                    }
+                },
+                {
+                    "fieldName": "enrichments.data",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "enrichments.data",
+                    "comment": {
+                        "description": "The enrichment data associated with the attribute and value. The meaning of this data depends on the type the enrichment record."
+                    }
+                },
+                {
+                    "fieldName": "enrichments.name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "enrichments.name",
+                    "comment": {
+                        "description": "The name of the attribute to which the enriched data pertains."
+                    }
+                },
+                {
+                    "fieldName": "enrichments.provider",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "enrichments.provider",
+                    "comment": {
+                        "description": "The enrichment data provider name."
+                    }
+                },
+                {
+                    "fieldName": "enrichments.type",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "enrichments.type",
+                    "comment": {
+                        "description": "The enrichment type. For example: location."
+                    }
+                },
+                {
+                    "fieldName": "enrichments.value",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "enrichments.value",
+                    "comment": {
+                        "description": "The value of the attribute to which the enriched data pertains."
+                    }
+                },
+                {
+                    "fieldName": "time",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "time",
+                    "comment": {
+                        "description": "The normalized event occurrence time."
+                    }
+                },
+                {
+                    "fieldName": "message",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "message",
+                    "comment": {
+                        "description": "The description of the event, as defined by the event source."
+                    }
+                },
+                {
+                    "fieldName": "metadata.correlation_uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.correlation_uid",
+                    "comment": {
+                        "description": "The unique identifier used to correlate events."
+                    }
+                },
+                {
+                    "fieldName": "metadata.event_code",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.event_code",
+                    "comment": {
+                        "description": "The Event ID or Code that the product uses to describe the event."
+                    }
+                },
+                {
+                    "fieldName": "metadata.uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.uid",
+                    "comment": {
+                        "description": "The logging system-assigned unique identifier of an event instance."
+                    }
+                },
+                {
+                    "fieldName": "metadata.labels",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": true,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.labels",
+                    "comment": {
+                        "description": "The list of category labels attached to the event or specific attributes. Labels are user defined tags or aliases added at normalization time.."
+                    }
+                },
+                {
+                    "fieldName": "metadata.log_name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.log_name",
+                    "comment": {
+                        "description": "The event log name. For example, syslog file name or Windows logging subsystem: Security."
+                    }
+                },
+                {
+                    "fieldName": "metadata.log_provider",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.log_provider",
+                    "comment": {
+                        "description": "The logging provider or logging service that logged the event. For example, Microsoft-Windows-Security-Auditing."
+                    }
+                },
+                {
+                    "fieldName": "metadata.log_version",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.log_version",
+                    "comment": {
+                        "description": "The event log schema version that specifies the format of the original event. For example syslog version or Cisco Log Schema Version."
+                    }
+                },
+                {
+                    "fieldName": "metadata.logged_time",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.logged_time",
+                    "comment": {
+                        "description": "The time when the logging system collected and logged the event."
+                    }
+                },
+                {
+                    "fieldName": "metadata.original_time",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.original_time",
+                    "comment": {
+                        "description": "The original event time as reported by the event source. For example, the time in the original format from system event log such as Syslog on Unix/Linux and the System event file on Windows. Omit if event is generated instead of collected via logs."
+                    }
+                },
+                {
+                    "fieldName": "metadata.processed_time",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.processed_time",
+                    "comment": {
+                        "description": "The event processed time, such as an ETL operation."
+                    }
+                },
+                {
+                    "fieldName": "metadata.product",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.product",
+                    "comment": {
+                        "description": "The product that reported the event."
+                    }
+                },
+                {
+                    "fieldName": "metadata.product.feature",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.product.feature",
+                    "comment": {
+                        "description": "The feature that reported the event."
+                    }
+                },
+                {
+                    "fieldName": "metadata.product.feature.name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.product.feature.name",
+                    "comment": {
+                        "description": "The name of the feature."
+                    }
+                },
+                {
+                    "fieldName": "metadata.product.feature.uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.product.feature.uid",
+                    "comment": {
+                        "description": "The unique identifier of the feature."
+                    }
+                },
+                {
+                    "fieldName": "metadata.product.feature.version",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.product.feature.version",
+                    "comment": {
+                        "description": "The version of the feature."
+                    }
+                },
+                {
+                    "fieldName": "metadata.product.lang",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.product.lang",
+                    "comment": {
+                        "description": "The two letter lower case language codes, as defined by ISO 639-1. For example: en (English), de (German), or fr (French)."
+                    }
+                },
+                {
+                    "fieldName": "metadata.product.name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.product.name",
+                    "comment": {
+                        "description": "The name of the product."
+                    }
+                },
+                {
+                    "fieldName": "metadata.product.path",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.product.path",
+                    "comment": {
+                        "description": "The installation path of the product."
+                    }
+                },
+                {
+                    "fieldName": "metadata.product.url_string",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.product.url_string",
+                    "comment": {
+                        "description": "The URL pointing towards the product."
+                    }
+                },
+                {
+                    "fieldName": "metadata.product.uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.product.uid",
+                    "comment": {
+                        "description": "The unique identifier of the product."
+                    }
+                },
+                {
+                    "fieldName": "metadata.product.vendor_name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.product.vendor_name",
+                    "comment": {
+                        "description": "The name of the vendor of the product."
+                    }
+                },
+                {
+                    "fieldName": "metadata.product.version",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.product.version",
+                    "comment": {
+                        "description": "The version of the product, as defined by the event source. For example: 2013.1.3-beta."
+                    }
+                },
+                {
+                    "fieldName": "metadata.profiles",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": true,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.profiles",
+                    "comment": {
+                        "description": "The list of profiles used to create the event."
+                    }
+                },
+                {
+                    "fieldName": "metadata.extension",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.extension",
+                    "comment": {
+                        "description": "The schema extension used to create the event."
+                    }
+                },
+                {
+                    "fieldName": "metadata.extension.name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.extension.name",
+                    "comment": {
+                        "description": "The schema extension name. For example: dev."
+                    }
+                },
+                {
+                    "fieldName": "metadata.extension.uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.extension.uid",
+                    "comment": {
+                        "description": "The schema extension unique identifier. For example: 999."
+                    }
+                },
+                {
+                    "fieldName": "metadata.extension.version",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.extension.version",
+                    "comment": {
+                        "description": "The schema extension version. For example: 1.0.0-alpha.2."
+                    }
+                },
+                {
+                    "fieldName": "metadata.sequence",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.sequence",
+                    "comment": {
+                        "description": "Sequence number of the event. The sequence number is a value available in some events, to make the exact ordering of events unambiguous, regardless of the event time precision."
+                    }
+                },
+                {
+                    "fieldName": "metadata.version",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "metadata.version",
+                    "comment": {
+                        "description": "The version of the OCSF schema, using Semantic Versioning Specification (SemVer). For example: 1.0.0. Event consumers use the version to determine the available event attributes."
+                    }
+                },
+                {
+                    "fieldName": "observables.name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "observables.name",
+                    "comment": {
+                        "description": "The full name of the observable attribute. The name is a pointer/reference to an attribute within the event data. For example: file.name."
+                    }
+                },
+                {
+                    "fieldName": "observables.reputation",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "observables.reputation",
+                    "comment": {
+                        "description": "Contains the original and normalized reputation scores."
+                    }
+                },
+                {
+                    "fieldName": "observables.reputation.provider",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "observables.reputation.provider",
+                    "comment": {
+                        "description": "Contains the original and normalized reputation scores."
+                    }
+                },
+                {
+                    "fieldName": "observables.reputation.base_score",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "observables.reputation.base_score",
+                    "comment": {
+                        "description": "Contains the original and normalized reputation scores."
+                    }
+                },
+                {
+                    "fieldName": "observables.reputation.score",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "observables.reputation.score",
+                    "comment": {
+                        "description": "Contains the original and normalized reputation scores."
+                    }
+                },
+                {
+                    "fieldName": "observables.reputation.score_id",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "observables.reputation.score_id",
+                    "comment": {
+                        "description": "Contains the original and normalized reputation scores."
+                    }
+                },
+                {
+                    "fieldName": "observables.type",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "observables.type",
+                    "comment": {
+                        "description": "The observable value type name."
+                    }
+                },
+                {
+                    "fieldName": "observables.type_id",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "observables.type_id",
+                    "comment": {
+                        "description": "The observable value type identifier."
+                    }
+                },
+                {
+                    "fieldName": "observables.value",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "observables.value",
+                    "comment": {
+                        "description": "The value associated with the observable attribute. The meaning of the value depends on the observable type."
+                    }
+                },
+                {
+                    "fieldName": "proxy.domain",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": true,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.domain",
+                    "comment": {
+                        "description": "The name of the domain."
+                    }
+                },
+                {
+                    "fieldName": "proxy.location.city",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.location.city",
+                    "comment": {
+                        "description": "The name of the city."
+                    }
+                },
+                {
+                    "fieldName": "proxy.location.continent",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.location.continent",
+                    "comment": {
+                        "description": "The name of the continent."
+                    }
+                },
+                {
+                    "fieldName": "proxy.location.coordinates",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.location.coordinates",
+                    "comment": {
+                        "description": "A two-element array, containing a longitude/latitude pair. The format conforms with GeoJSON."
+                    }
+                },
+                {
+                    "fieldName": "proxy.location.country",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.location.country",
+                    "comment": {
+                        "description": "The ISO 3166-1 Alpha-2 country code. For the complete list of country codes see ISO 3166-1 alpha-2 codes."
+                    }
+                },
+                {
+                    "fieldName": "proxy.location.desc",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.location.desc",
+                    "comment": {
+                        "description": "The description of the geographical location."
+                    }
+                },
+                {
+                    "fieldName": "proxy.location.isp",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.location.isp",
+                    "comment": {
+                        "description": "The name of the Internet Service Provider (ISP)."
+                    }
+                },
+                {
+                    "fieldName": "proxy.location.is_on_premises",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.location.is_on_premises",
+                    "comment": {
+                        "description": "The indication of whether the location is on premises."
+                    }
+                },
+                {
+                    "fieldName": "proxy.location.postal_code",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.location.postal_code",
+                    "comment": {
+                        "description": "The postal code of the location."
+                    }
+                },
+                {
+                    "fieldName": "proxy.location.provider",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.location.provider",
+                    "comment": {
+                        "description": "The provider of the geographical location data."
+                    }
+                },
+                {
+                    "fieldName": "proxy.location.region",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.location.region",
+                    "comment": {
+                        "description": "The alphanumeric code that identifies the principal subdivision (e.g. province or state) of the country. Region codes are defined at ISO 3166-2 and have a limit of three characters. For example, see the region codes for the US."
+                    }
+                },
+                {
+                    "fieldName": "proxy.hostname",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.hostname",
+                    "comment": {
+                        "description": "The fully qualified name of the endpoint."
+                    }
+                },
+                {
+                    "fieldName": "proxy.ip",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.ip",
+                    "comment": {
+                        "description": "The IP address of the endpoint, in either IPv4 or IPv6 format."
+                    }
+                },
+                {
+                    "fieldName": "proxy.instance_uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.instance_uid",
+                    "comment": {
+                        "description": "The unique identifier of a VM instance."
+                    }
+                },
+                {
+                    "fieldName": "proxy.intermediate_ips",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.intermediate_ips",
+                    "comment": {
+                        "description": "The intermediate IP Addresses. For example, the IP addresses in the HTTP X-Forwarded-For header."
+                    }
+                },
+                {
+                    "fieldName": "proxy.mac",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.mac",
+                    "comment": {
+                        "description": "The Media Access Control (MAC) address of the endpoint."
+                    }
+                },
+                {
+                    "fieldName": "proxy.name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.name",
+                    "comment": {
+                        "description": "The short name of the endpoint."
+                    }
+                },
+                {
+                    "fieldName": "proxy.interface_uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.interface_uid",
+                    "comment": {
+                        "description": "The unique identifier of the network interface."
+                    }
+                },
+                {
+                    "fieldName": "proxy.interface_name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.interface_name",
+                    "comment": {
+                        "description": "The name of the network interface (e.g. eth2)."
+                    }
+                },
+                {
+                    "fieldName": "proxy.port",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.port",
+                    "comment": {
+                        "description": "The port used for communication within the network connection."
+                    }
+                },
+                {
+                    "fieldName": "proxy.svc_name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.svc_name",
+                    "comment": {
+                        "description": "The service name in service-to-service connections. For example, AWS VPC logs the pkt-src-aws-service and pkt-dst-aws-service fields identify the connection is coming from or going to an AWS service."
+                    }
+                },
+                {
+                    "fieldName": "proxy.subnet_uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.subnet_uid",
+                    "comment": {
+                        "description": "The unique identifier of a virtual subnet."
+                    }
+                },
+                {
+                    "fieldName": "proxy.uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.uid",
+                    "comment": {
+                        "description": "The unique identifier of the endpoint."
+                    }
+                },
+                {
+                    "fieldName": "proxy.vlan_uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.vlan_uid",
+                    "comment": {
+                        "description": "The Virtual LAN identifier."
+                    }
+                },
+                {
+                    "fieldName": "proxy.vpc_uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "proxy.vpc_uid",
+                    "comment": {
+                        "description": "The unique identifier of the Virtual Private Cloud (VPC)."
+                    }
+                },
+                {
+                    "fieldName": "severity",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "severity",
+                    "comment": {
+                        "description": "The event severity, normalized to the caption of the severity_id value. In the case of 'Other', it is defined by the event source."
+                    }
+                },
+                {
+                    "fieldName": "severity_id",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "severity_id",
+                    "comment": {
+                        "description": "The normalized identifier of the event severity."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.domain",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": true,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.domain",
+                    "comment": {
+                        "description": "The name of the domain."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.location.city",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.location.city",
+                    "comment": {
+                        "description": "The name of the city."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.location.continent",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.location.continent",
+                    "comment": {
+                        "description": "The name of the continent."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.location.coordinates",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.location.coordinates",
+                    "comment": {
+                        "description": "A two-element array, containing a longitude/latitude pair. The format conforms with GeoJSON."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.location.country",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.location.country",
+                    "comment": {
+                        "description": "The ISO 3166-1 Alpha-2 country code. For the complete list of country codes see ISO 3166-1 alpha-2 codes."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.location.desc",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.location.desc",
+                    "comment": {
+                        "description": "The description of the geographical location."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.location.isp",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.location.isp",
+                    "comment": {
+                        "description": "The name of the Internet Service Provider (ISP)."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.location.is_on_premises",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.location.is_on_premises",
+                    "comment": {
+                        "description": "The indication of whether the location is on premises."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.location.postal_code",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.location.postal_code",
+                    "comment": {
+                        "description": "The postal code of the location."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.location.provider",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.location.provider",
+                    "comment": {
+                        "description": "The provider of the geographical location data."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.location.region",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.location.region",
+                    "comment": {
+                        "description": "The alphanumeric code that identifies the principal subdivision (e.g. province or state) of the country. Region codes are defined at ISO 3166-2 and have a limit of three characters. For example, see the region codes for the US."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.hostname",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.hostname",
+                    "comment": {
+                        "description": "The fully qualified name of the endpoint."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.ip",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.ip",
+                    "comment": {
+                        "description": "The IP address of the endpoint, in either IPv4 or IPv6 format."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.instance_uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.instance_uid",
+                    "comment": {
+                        "description": "The unique identifier of a VM instance."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.intermediate_ips",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.intermediate_ips",
+                    "comment": {
+                        "description": "The intermediate IP Addresses. For example, the IP addresses in the HTTP X-Forwarded-For header."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.mac",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.mac",
+                    "comment": {
+                        "description": "The Media Access Control (MAC) address of the endpoint."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.name",
+                    "comment": {
+                        "description": "The short name of the endpoint."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.interface_uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.interface_uid",
+                    "comment": {
+                        "description": "The unique identifier of the network interface."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.interface_name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.interface_name",
+                    "comment": {
+                        "description": "The name of the network interface (e.g. eth2)."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.port",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.port",
+                    "comment": {
+                        "description": "The port used for communication within the network connection."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.svc_name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.svc_name",
+                    "comment": {
+                        "description": "The service name in service-to-service connections. For example, AWS VPC logs the pkt-src-aws-service and pkt-dst-aws-service fields identify the connection is coming from or going to an AWS service."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.subnet_uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.subnet_uid",
+                    "comment": {
+                        "description": "The unique identifier of a virtual subnet."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.uid",
+                    "comment": {
+                        "description": "The unique identifier of the endpoint."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.vlan_uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.vlan_uid",
+                    "comment": {
+                        "description": "The Virtual LAN identifier."
+                    }
+                },
+                {
+                    "fieldName": "src_endpoint.vpc_uid",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "src_endpoint.vpc_uid",
+                    "comment": {
+                        "description": "The unique identifier of the Virtual Private Cloud (VPC)."
+                    }
+                },
+                {
+                    "fieldName": "start_time",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "start_time",
+                    "comment": {
+                        "description": "The start time of a time period, or the time of the least recent event included in the aggregate event."
+                    }
+                },
+                {
+                    "fieldName": "status",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "status",
+                    "comment": {
+                        "description": "The event status, normalized to the caption of the status_id value. In the case of 'Other', it is defined by the event source."
+                    }
+                },
+                {
+                    "fieldName": "status_code",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "status_code",
+                    "comment": {
+                        "description": "The event status code, as reported by the event source."
+                    }
+                },
+                {
+                    "fieldName": "status_detail",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "status_detail",
+                    "comment": {
+                        "description": "The status details contains additional information about the event outcome."
+                    }
+                },
+                {
+                    "fieldName": "status_id",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "status_id",
+                    "comment": {
+                        "description": "The normalized identifier of the event status."
+                    }
+                },
+                {
+                    "fieldName": "tls.certificate.serial_number",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.certificate.serial_number",
+                    "comment": {
+                        "description": "The serial number of the certificate used to create the digital signature."
+                    }
+                },
+                {
+                    "fieldName": "tls.certificate.created_time",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.certificate.created_time",
+                    "comment": {
+                        "description": "The time when the certificate was created."
+                    }
+                },
+                {
+                    "fieldName": "tls.certificate.expiration_time",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.certificate.expiration_time",
+                    "comment": {
+                        "description": "The expiration time of the certificate."
+                    }
+                },
+                {
+                    "fieldName": "tls.certificate.fingerprints.algorithm",
+                    "owner": "Network_Activity.certificate.",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.certificate.fingerprints.algorithm",
+                    "comment": {
+                        "description": "The hash algorithm used to create the digital fingerprint, normalized to the caption of 'algorithm_id'. In the case of 'Other', it is defined by the event source."
+                    }
+                },
+                {
+                    "fieldName": "tls.certificate.fingerprints.algorithm_id",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.certificate.fingerprints.algorithm_id",
+                    "comment": {
+                        "description": "The identifier of the normalized hash algorithm, which was used to create the digital fingerprint."
+                    }
+                },
+                {
+                    "fieldName": "tls.certificate.fingerprints.value",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.certificate.fingerprints.value",
+                    "comment": {
+                        "description": "The digital fingerprint value."
+                    }
+                },
+                {
+                    "fieldName": "tls.certificate.issuer",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.certificate.issuer",
+                    "comment": {
+                        "description": "The certificate issuer distinguished name."
+                    }
+                },
+                {
+                    "fieldName": "tls.certificate.subject",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.certificate.subject",
+                    "comment": {
+                        "description": "The certificate subject distinguished name."
+                    }
+                },
+                {
+                    "fieldName": "tls.certificate.version",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.certificate.version",
+                    "comment": {
+                        "description": "The certificate version."
+                    }
+                },
+                {
+                    "fieldName": "tls.certificate_chain",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": true,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.certificate_chain",
+                    "comment": {
+                        "description": "The Chain of Certificate Serial Numbers field provides a chain of Certificate Issuer Serial Numbers leading to the Root Certificate Issuer."
+                    }
+                },
+                {
+                    "fieldName": "tls.cipher",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.cipher",
+                    "comment": {
+                        "description": "The negotiated cipher suite."
+                    }
+                },
+                {
+                    "fieldName": "tls.client_ciphers",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.client_ciphers",
+                    "comment": {
+                        "description": "The client cipher suites that were exchanged during the TLS handshake negotiation."
+                    }
+                },
+                {
+                    "fieldName": "tls.alert",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.alert",
+                    "comment": {
+                        "description": "The integer value of TLS alert if present. The alerts are defined in the TLS specification in RFC-2246."
+                    }
+                },
+                {
+                    "fieldName": "tls.extension_list.data",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.extension_list.data",
+                    "comment": {
+                        "description": "The data contains information specific to the particular extension type."
+                    }
+                },
+                {
+                    "fieldName": "tls.extension_list.type",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.extension_list.type",
+                    "comment": {
+                        "description": "The TLS extension type. For example: Server Name."
+                    }
+                },
+                {
+                    "fieldName": "tls.extension_list.type_id",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.extension_list.type_id",
+                    "comment": {
+                        "description": "The TLS extension type identifier. See The Transport Layer Security (TLS) extension page."
+                    }
+                },
+                {
+                    "fieldName": "tls.handshake_dur",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.handshake_dur",
+                    "comment": {
+                        "description": "The amount of total time for the TLS handshake to complete after the TCP connection is established, including client-side delays, in milliseconds."
+                    }
+                },
+                {
+                    "fieldName": "tls.ja3_hash.algorithm",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.ja3_hash.algorithm",
+                    "comment": {
+                        "description": "The hash algorithm used to create the digital fingerprint, normalized to the caption of 'algorithm_id'. In the case of 'Other', it is defined by the event source."
+                    }
+                },
+                {
+                    "fieldName": "tls.ja3_hash.algorithm_id",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.ja3_hash.algorithm_id",
+                    "comment": {
+                        "description": "The identifier of the normalized hash algorithm, which was used to create the digital fingerprint."
+                    }
+                },
+                {
+                    "fieldName": "tls.ja3_hash.value",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.ja3_hash.value",
+                    "comment": {
+                        "description": "The digital fingerprint value."
+                    }
+                },
+                {
+                    "fieldName": "tls.ja3s_hash.algorithm",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.ja3s_hash.algorithm",
+                    "comment": {
+                        "description": "The hash algorithm used to create the digital fingerprint, normalized to the caption of 'algorithm_id'. In the case of 'Other', it is defined by the event source."
+                    }
+                },
+                {
+                    "fieldName": "tls.ja3s_hash.algorithm_id",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.ja3s_hash.algorithm_id",
+                    "comment": {
+                        "description": "The identifier of the normalized hash algorithm, which was used to create the digital fingerprint."
+                    }
+                },
+                {
+                    "fieldName": "tls.ja3s_hash.value",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.ja3s_hash.value",
+                    "comment": {
+                        "description": "The digital fingerprint value."
+                    }
+                },
+                {
+                    "fieldName": "tls.key_length",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.key_length",
+                    "comment": {
+                        "description": "The length of the encryption key."
+                    }
+                },
+                {
+                    "fieldName": "tls.server_ciphers",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": true,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.server_ciphers",
+                    "comment": {
+                        "description": "The server cipher suites that were exchanged during the TLS handshake negotiation."
+                    }
+                },
+                {
+                    "fieldName": "tls.sni",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.sni",
+                    "comment": {
+                        "description": "The Server Name Indication (SNI) extension sent by the client."
+                    }
+                },
+                {
+                    "fieldName": "tls.sans.name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.sans.name",
+                    "comment": {
+                        "description": "Name of SAN (e.g. The actual IP Address or domain.)."
+                    }
+                },
+                {
+                    "fieldName": "tls.sans.type",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.sans.type",
+                    "comment": {
+                        "description": "Type descriptor of SAN (e.g. IP Address/domain/etc.)."
+                    }
+                },
+                {
+                    "fieldName": "tls.version",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "tls.version",
+                    "comment": {
+                        "description": "The TLS protocol version."
+                    }
+                },
+                {
+                    "fieldName": "timezone_offset",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "timezone_offset",
+                    "comment": {
+                        "description": "The number of minutes that the reported event time is ahead or behind UTC, in the range -1,080 to +1,080."
+                    }
+                },
+                {
+                    "fieldName": "traffic.bytes_in",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "traffic.bytes_in",
+                    "comment": {
+                        "description": "The number of bytes sent from the destination to the source."
+                    }
+                },
+                {
+                    "fieldName": "traffic.bytes_out",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "traffic.bytes_out",
+                    "comment": {
+                        "description": "The number of bytes sent from the source to the destination."
+                    }
+                },
+                {
+                    "fieldName": "traffic.packets_in",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "traffic.packets_in",
+                    "comment": {
+                        "description": "The number of packets sent from the destination to the source."
+                    }
+                },
+                {
+                    "fieldName": "traffic.packets_out",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "traffic.packets_out",
+                    "comment": {
+                        "description": "The number of packets sent from the source to the destination."
+                    }
+                },
+                {
+                    "fieldName": "traffic.bytes",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "traffic.bytes",
+                    "comment": {
+                        "description": "The total number of bytes (in and out)."
+                    }
+                },
+                {
+                    "fieldName": "traffic.packets",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "traffic.packets",
+                    "comment": {
+                        "description": "The total number of packets (in and out)."
+                    }
+                },
+                {
+                    "fieldName": "type_uid",
+                    "owner": "Network_Activity",
+                    "type": "number",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "type_uid",
+                    "comment": {
+                        "description": "The event type ID. It identifies the event's semantics and structure. The value is calculated by the logging system."
+                    }
+                },
+                {
+                    "fieldName": "type_name",
+                    "owner": "Network_Activity",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "type_name",
+                    "comment": {
+                        "description": "The event type name, as defined by the type_uid."
+                    }
+                },
+                {
+                    "fieldName": "_time",
+                    "owner": "BaseEvent",
+                    "type": "timestamp",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "_time",
+                    "comment": ""
+                },
+                {
+                    "fieldName": "host",
+                    "owner": "BaseEvent",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "host",
+                    "comment": ""
+                },
+                {
+                    "fieldName": "source",
+                    "owner": "BaseEvent",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "source",
+                    "comment": ""
+                },
+                {
+                    "fieldName": "sourcetype",
+                    "owner": "BaseEvent",
+                    "type": "string",
+                    "fieldSearch": "",
+                    "required": false,
+                    "multivalue": false,
+                    "hidden": false,
+                    "editable": true,
+                    "displayName": "sourcetype",
+                    "comment": ""
+                }
+            ],
+            "calculations": [],
+            "constraints": [
+                {
+                    "search": "(`ocsf_network_activity_indexes`) class_uid=40*",
+                    "owner": "Network_Activity"
+                }
+            ],
+            "lineage": "Network_Activity"
+        }
+    ],
+    "objectNameList": [
+        "Network_Activity"
+    ]
+}
